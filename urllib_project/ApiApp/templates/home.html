@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        {% for r in response %}
+        {{r.name}}
+        {{r.roll}}
+        <br>
+        <a href="{% url 'update' r.id %}">Edit</a>
+        <a href="{% url 'delete' r.id %}">Delete</a>
+        <hr>
+        {% endfor %}
+
+    </body>
+</html>

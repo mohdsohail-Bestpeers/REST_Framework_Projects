@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text input fields</h2>
+
+<form method="POST" >
+            {% csrf_token %}
+           {{form.as_p}}
+        
+            <input type="submit" value="register">
+        </form>
+
+
+
+</body>
+</html>
